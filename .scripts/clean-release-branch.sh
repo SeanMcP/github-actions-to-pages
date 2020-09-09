@@ -2,7 +2,10 @@
 
 branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
-git checkout gh-pages
+if [ "$branch" != "gh-pages" ]
+  then
+    git checkout gh-pages
+fi
 
 git pull
 
@@ -15,5 +18,7 @@ git commit -m "task: clean release branch"
 
 git push
 
-git checkout $branch
-
+if [ "$branch" != "gh-pages" ]
+  then
+    git checkout $branch
+fi
