@@ -1,6 +1,7 @@
-# Testing GitHub Actions
+# GitHub Actions to Pages
 
-The goal of this exercise is to find a way to build for [GitHub Pages](https://pages.github.com) with [GitHub Actions](https://github.com/features/actions).
+> ✨ How to build and deploy your site from the comfort of GitHub
 
-To test this, I'm going to generate a static-site with [Eleventy](https://www.11ty.dev).
+[GitHub Actions](https://github.com/features/actions) allows you to automate workflows from within GitHub. [GitHub Pages](https://pages.github.com/) provides free hosting for your repositories.
 
+With these tools, you can bring the two together into a workable continous-deployment solution.
