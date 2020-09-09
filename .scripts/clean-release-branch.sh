@@ -9,6 +9,8 @@ git pull
 # TODO: find a way to configure the ignored files
 ls | grep -v 'CNAME' | xargs rm -rf
 
+git add .
+
 git commit -m "task: clean release branch"
 
 git push
